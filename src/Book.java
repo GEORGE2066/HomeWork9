@@ -10,4 +10,28 @@ public class Book {
         this.nameAuthor = nameAuthor;
         this.surnameAuthor = surnameAuthor;
     }
+
+
+
+    /*ГЕТТЕРЫ*/
+    public String getNameBook() {
+        return nameBook;
+    }
+    public int getYearBook() {
+        return yearBook;
+    }
+    public void setNameAuthor(Author nameAuthor) {
+        this.nameAuthor = nameAuthor;
+    }
+    public Author getSurnameAuthor() {
+        return surnameAuthor;
+    }
+
+
+
+    /*СЕТТЕРЫ*/
+
+    public void setYearBook(int yearBook) {
+        this.yearBook = yearBook;
+    }
 }
