@@ -1,14 +1,12 @@
 public class Book {
     private String nameBook;
     private int yearBook;
-    private Author nameAuthor;
-    private Author surnameAuthor;
+    private Author author;
 
-    public Book(String nameBook, int yearBook, Author nameAuthor, Author surnameAuthor) {
+    public Book(String nameBook, int yearBook, String nameAuthor, String surnameAuthor) {
         this.nameBook = nameBook;
         this.yearBook = yearBook;
-        this.nameAuthor = nameAuthor;
-        this.surnameAuthor = surnameAuthor;
+        this.author = new Author(nameAuthor, surnameAuthor);
     }
 
 
@@ -20,18 +18,17 @@ public class Book {
     public int getYearBook() {
         return yearBook;
     }
-    public void setNameAuthor(Author nameAuthor) {
-        this.nameAuthor = nameAuthor;
-    }
-    public Author getSurnameAuthor() {
-        return surnameAuthor;
-    }
 
-
+    public Author getAuthor() {
+        return author;
+    }
 
     /*СЕТТЕРЫ*/
 
     public void setYearBook(int yearBook) {
         this.yearBook = yearBook;
+    }
+    public void setNameSurnameAuthor(Author nameSurnameAuthor) {
+        this.author = nameSurnameAuthor;
     }
 }
