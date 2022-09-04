@@ -7,12 +7,20 @@ public class Author {
         this.surnameAuthor = surnameAuthor;
     }
 
+
+
+    /*ГЕТТЕРЫ*/
+
     public String getNameAuthor() {
         return nameAuthor;
     }
     public String getSurnameAuthor() {
         return surnameAuthor;
     }
+
+
+
+    /*СЕТТЕРЫ*/
 
     public void setSurnameAuthor(String surnameAuthor) {
         this.surnameAuthor = surnameAuthor;
